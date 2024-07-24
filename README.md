@@ -1,17 +1,5 @@
 Employee App
 
-Table of Contents
-
-    Introduction
-    Architecture Overview
-    Technologies Used
-    Getting Started
-    API Endpoints
-    Frontend Setup
-    Running the Application
-    Contributing
-    License
-
 Introduction
 
 This project is a web application that uses a .NET API built with minimal APIs and follows a clean architecture approach.
