@@ -18,7 +18,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseCors("Local");
+string corsPolicy = builder.Configuration["CorsPolicy"] ?? "Local";
+app.UseCors(corsPolicy);
 
 app.MapGet("/api/employees", async ([FromServices] IEmployeeService employeeService) =>
 {
