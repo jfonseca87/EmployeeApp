@@ -18,14 +18,16 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.MapGet("/employees", async ([FromServices] IEmployeeService employeeService) =>
+app.UseCors("Local");
+
+app.MapGet("/api/employees", async ([FromServices] IEmployeeService employeeService) =>
 {
     return await employeeService.GetEmployeesAsync();
 })
 .WithName("GetEmployeesAsync")
 .WithOpenApi();
 
-app.MapGet("/employees/{id}", async ([FromServices] IEmployeeService employeeService, [FromRoute] int id) =>
+app.MapGet("/api/employees/{id}", async ([FromServices] IEmployeeService employeeService, [FromRoute] int id) =>
 {
     var result = await employeeService.GetEmployeeByIdAsync(id);
     if (result is null)
