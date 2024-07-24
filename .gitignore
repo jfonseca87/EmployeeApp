@@ -1,12 +1,12 @@
 .vs/
-src/Employees.Api/bin
-src/Employees.Api/obj
-src/Employees.Application/bin
-src/Employees.Application/obj
-src/Employees.Domain/bin
-src/Employees.Domain/obj
-src/Employees.Infrastructure/bin
-src/Employees.Infrastructure/obj
+Employees.Api/bin
+Employees.Api/obj
+Employees.Application/bin
+Employees.Application/obj
+Employees.Domain/bin
+Employees.Domain/obj
+Employees.Infrastructure/bin
+Employees.Infrastructure/obj
 
-test/Employees.Application.Tests/obj
-test/Employees.Application.Tests/bin
+Employees.Application.Tests/obj
+Employees.Application.Tests/bin

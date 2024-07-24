@@ -3,15 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Employees.Api", "src\Employees.Api\Employees.Api.csproj", "{0E134887-1E97-4615-B6B4-45E208A8A908}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Employees.Api", "Employees.Api\Employees.Api.csproj", "{0E134887-1E97-4615-B6B4-45E208A8A908}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Employees.Application", "src\Employees.Application\Employees.Application.csproj", "{4ABA2FA9-46F5-4816-9403-859ADD79AFA3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Employees.Application", "Employees.Application\Employees.Application.csproj", "{4ABA2FA9-46F5-4816-9403-859ADD79AFA3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Employees.Domain", "src\Employees.Domain\Employees.Domain.csproj", "{18E765CE-3542-4F37-BDB7-F78FF91351E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Employees.Domain", "Employees.Domain\Employees.Domain.csproj", "{18E765CE-3542-4F37-BDB7-F78FF91351E9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Employees.Infrastructure", "src\Employees.Infrastructure\Employees.Infrastructure.csproj", "{58701DAE-5E61-41A0-A328-62F8E9002EEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Employees.Infrastructure", "Employees.Infrastructure\Employees.Infrastructure.csproj", "{58701DAE-5E61-41A0-A328-62F8E9002EEB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Employees.Application.Tests", "test\Employees.Application.Tests\Employees.Application.Tests.csproj", "{BD46C974-5A16-4224-993D-225C19B1EC02}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Employees.Application.Tests", "Employees.Application.Tests\Employees.Application.Tests.csproj", "{BD46C974-5A16-4224-993D-225C19B1EC02}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A3802BB3-3F89-4AEE-976A-5E4F0BEFEFF4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{ABE4A07B-072D-4C5C-B2C9-B9CC4EC2D7E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,6 +46,13 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0E134887-1E97-4615-B6B4-45E208A8A908} = {A3802BB3-3F89-4AEE-976A-5E4F0BEFEFF4}
+		{4ABA2FA9-46F5-4816-9403-859ADD79AFA3} = {A3802BB3-3F89-4AEE-976A-5E4F0BEFEFF4}
+		{18E765CE-3542-4F37-BDB7-F78FF91351E9} = {A3802BB3-3F89-4AEE-976A-5E4F0BEFEFF4}
+		{58701DAE-5E61-41A0-A328-62F8E9002EEB} = {A3802BB3-3F89-4AEE-976A-5E4F0BEFEFF4}
+		{BD46C974-5A16-4224-993D-225C19B1EC02} = {ABE4A07B-072D-4C5C-B2C9-B9CC4EC2D7E7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {05E5B0E0-B42D-4559-B5D9-9ED40EA53B92}
